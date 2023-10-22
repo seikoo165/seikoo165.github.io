@@ -68,88 +68,8 @@
     <section>
         <h2 class="title">裝備介紹</h2>
         <div class="container">
-            <div class="d-flex mxm-12 flex-wrap">
-                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>                <div class="w-1/4 mb-68 cursor-pointer">
-                    <div class="card-shadow h-333 br-14 mx-12">
-                        <div>
-                            <img class="w-100" src="./assets/gun/P-50.png" alt="">
-                        </div>
-                        <div class="px-4">
-                            <div class="fw-bloder fs-20 text-center pb-12">衝鋒槍</div>
-                            <div class="fs-20">衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧，適合喜歡首當其衝的人群使用。</div>
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex mxm-12 flex-wrap" id="card">
+                
             </div>
         </div>
     </section>
@@ -178,4 +98,73 @@
         </div>
     </footer>
 </body>
+<script>
+    const fakedata = [
+        {
+            title: '衝鋒槍',
+            description: '衝鋒槍的特色：<br>射速快、子彈多、槍枝短小輕巧<br>，適合喜歡首當其衝的人群使用。',
+            img: './assets/gun/P-50.png',
+            textcolor: '#00ff00'
+        },
+        {
+            title: '步槍',
+            description: '步槍的特色： 泛用型、適合中距離，亦可裝上各類瞄具，適合廣泛大眾使用。',
+            img: './assets/gun/HK-.png',
+            textcolor: '#ff00ff'
+        },
+        {
+            title: '狙擊槍',
+            description: '狙擊槍的特色： 多為空氣動力、一拉一發、瞄準距離遠、不太適合新手使用。',
+            img: './assets/gun/SNIPE.png',
+            textcolor: ''
+        },
+        {
+            title: '霰彈槍',
+            description: '霰彈槍的特色： 一次可射出多發子彈、適合中距離使用，因為太遠容易瞄不準。',
+            img: './assets/gun/shotgun.png',
+            textcolor: ''
+        },
+        {
+            title: '手槍',
+            description: '手槍的特色： 初速較低，所以多數場地限制一定距離內會要求切換手槍，適合短距離使用。',
+            img: './assets/gun/edgel.png',
+            textcolor: ''
+        },
+        {
+            title: 'RPG/投擲武器',
+            description: 'RPG/投擲武器特色： 場上不常見，多為娛樂效果使用，沒特別需要不建議購買。',
+            img: './assets/gun/rpg.png',
+            textcolor: ''
+        },
+        {
+            title: '瞄具',
+            description: '瞄具使用： 種類繁多，常見有類紅點、步槍鏡、RMR...等，可依據槍枝種類選配。',
+            img: './assets/gun/mod.png',
+            textcolor: ''
+        },
+        {
+            title: '防具',
+            description: '防具： 部分部位防具強制配戴(護目鏡、護嘴)，其餘選配。 部分防具有增加彈匣配戴數量，具減少疼痛感及攝影...',
+            img: './assets/gun/vest.png',
+            textcolor: ''
+        }
+    ]
+    const card = document.getElementById('card')
+    console.log(card.innerHTML);
+    const content = fakedata.map ((el) =>{
+        return `<div class="w-1/4 mb-68 cursor-pointer">
+                     <div class="card-shadow h-333 br-14 mx-12">
+                         <div>
+                             <img class="w-100" src="${el.img}" alt="">
+                         </div>
+                         <div class="px-4">
+                             <div class="fw-bloder fs-20 text-center pb-12" style="color:${el.textcolor};">${el.title}</div>
+                             <div class="fs-20">${el.description}</div>
+                         </div>
+                     </div>
+                 </div>`
+    })
+    card.innerHTML = content.join('');
+    console.log(content);
+</script>
 </html>
